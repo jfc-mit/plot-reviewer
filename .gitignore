@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+feedback_run_*/
+strategy_test/
+*.egg-info/

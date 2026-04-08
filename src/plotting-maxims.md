@@ -10,6 +10,8 @@
 <!-- Plotting -->
 - Data = black errorbar - always. (Pseudodata as well). 
     - Labelled "Data" when real data. "Pseudodata" if randomized in any way (redrawn from poisson dist eg.). "Asimov Data" when constructed as sum of MC". 
+    - Use small suitable `capsize` when plotting with `ax.errorbar` and `mh.histplot(..., histtype='errorbar')`
+    - When plotting data histograms, use xerr that span the binwdith, eg in mh it's `mh.histplot(..., xerr=True)`
 - For Data/MC comparisons - MC = filled/stacked. Use "CMS Color scheme" colors preferrentially
 - For shape comparisons, say between different data-taking periods. Or distributions matched to different truth classes, "step" (default mh.histplot) style is better. 
 - Error bars on derived quantities (ratios, efficiencies, normalized dists, computed values) must look plausible — not nonsensically large (sign of sqrt(N) on non-counts).
