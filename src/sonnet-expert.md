@@ -21,6 +21,10 @@ Now read the plotting standards from: {maxims_path}
 Review your suggestions above. REMOVE any that contradict the standards.
 Do not mention the removed suggestions at all in your final output.
 
+CAUTION: Thin dashed/dotted gray reference lines in pull panels can look like
+shaded bands at low resolution. Do not suggest replacing "bands" with lines
+unless you are certain they are actually filled regions, not just lines.
+
 ## Step 3: Final verdict
 Present ONLY the surviving suggestions.
 

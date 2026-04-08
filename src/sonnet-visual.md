@@ -12,3 +12,8 @@ Otherwise list ONLY the visual issues you can see.
 CRITICAL: Any text overlapping other text, axis frames, tick labels, or data
 is an automatic FAIL regardless of everything else. Look carefully at ALL edges
 and corners of every panel.
+
+CAUTION on pull panel reference lines: Thin dashed/dotted gray lines at ±1σ/±2σ
+can look like shaded bands at low resolution. Do NOT report axhspan/filled bands
+unless you are genuinely certain — thin horizontal lines are the CORRECT rendering.
+If unsure, do not flag it.

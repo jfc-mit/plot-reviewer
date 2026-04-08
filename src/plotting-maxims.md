@@ -10,7 +10,7 @@
 <!-- Plotting -->
 - Data = black errorbar - always. (Pseudodata as well). 
     - Labelled "Data" when real data. "Pseudodata" if randomized in any way (redrawn from poisson dist eg.). "Asimov Data" when constructed as sum of MC". 
-    - Use small suitable `capsize` when plotting with `ax.errorbar` and `mh.histplot(..., histtype='errorbar')`
+    - Use small suitable `capsize` (on yerr only!) when plotting with `ax.errorbar` and `mh.histplot(..., histtype='errorbar')`
     - When plotting data histograms, use xerr that span the binwdith, eg in mh it's `mh.histplot(..., xerr=True)`
 - For Data/MC comparisons - MC = filled/stacked. Use "CMS Color scheme" colors preferrentially
 - For shape comparisons, say between different data-taking periods. Or distributions matched to different truth classes, "step" (default mh.histplot) style is better. 
@@ -19,7 +19,9 @@
 <!-- "Pull" panel -->
 - Pull/Ratio/Residuals panel:
     - Draw horizontal reference **lines** (not shaded bands) at exactly 0, ±1, ±2 sigmas, NO extras. Use solid gray for 0, dashed gray for ±1, dotted gray for ±2. Absolutely do NOT use colored fill bands (axhspan, etc...). 
-    - Annotate ref lines with subtle gray `r"$1\sigma$"` etc labels on the RIGHT side of the pull panel. Right side is standard — don't move them. The singular exception to overlap rules. Set `zorder` to always show these behind everything else. 
+    - NOTE for reviewers: dashed/dotted gray reference lines rendered at low resolution can *look* like shaded bands. Do NOT flag axhspan unless you can confirm it in the source code. Thin gray lines = correct.
+    - Annotate ref lines with subtle gray `r"$1\sigma$"` etc labels on the RIGHT side of the pull panel - within the panel. Right side is standard — don't move them. The singular exception to overlap rules. Set `zorder` to always show these behind everything else. Align them just above the lines they refer to. 
+    - Pull/residual data points MUST have visible error bars. If error bars are present but too small to see at normal viewing size, that's a problem — either the uncertainty calculation is wrong or the marker/capsize is too small. Invisible errorbars = FAIL.
 <!-- Legend -->
 - Legend must not overlap data. "upper right" is preferred.
     - Prefer to scale axis range, have more columns, adjust legend fontsize down to "xx-small", shorten labels before you move legend. 

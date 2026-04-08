@@ -18,6 +18,8 @@ Compare what you see against common sense:
 - Did the fix break something that was previously fine (e.g. legend disappeared,
   axis labels gone, plot doesn't render)?
 - Any obvious visual artifacts?
+- Pull/residual panel: are data point error bars still visible? If errorbars
+  disappeared or shrank to invisible after the fix, that is BROKEN.
 
 Only flag NEW problems that weren't there before. Do NOT re-audit the entire spec.
 
