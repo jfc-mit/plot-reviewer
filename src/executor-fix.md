@@ -13,5 +13,12 @@ Reviewer feedback:
 
 {feedback}
 
-Fix ALL issues. Run the script to regenerate {plot_path}.
-Do not ignore any feedback. Every issue must be addressed.
+Fix the issues raised. Run the script to regenerate {plot_path}.
+
+Rules:
+- Do not ignore feedback — UNLESS it directly contradicts the plotting standards above.
+  The standards are non-negotiable. If a reviewer suggests something the spec forbids
+  (e.g. colored bands when spec says lines), follow the spec.
+- Do NOT regress things that already work. If the plot placement, axis range, or styling
+  is already good for something the reviewers didn't complain about — leave it alone.
+  Only change what was flagged.

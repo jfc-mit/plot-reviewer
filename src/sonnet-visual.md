@@ -8,3 +8,7 @@ Only check the items under the "## Visual" section — ignore the "## Code" sect
 
 Check each visual standard against the plot. If all are met, say exactly: ACCEPT
 Otherwise list ONLY the visual issues you can see.
+
+CRITICAL: Any text overlapping other text, axis frames, tick labels, or data
+is an automatic FAIL regardless of everything else. Look carefully at ALL edges
+and corners of every panel.

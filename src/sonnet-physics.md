@@ -14,5 +14,21 @@ Can you read the fitted parameters from the plot either from the legend or extra
     - If not do you see any obvious patterns? Constant offset? Particular structure, say a wave or a slope? 
 - Any red flags? Does it look like the authors missed a calibration or made a mistake? 
 
-Verdict: ACCEPT / MINOR REVISION / MAJOR REVISION / REJECT
+## Output format
+
+Separate your feedback into two sections:
+
+### ANALYSIS ISSUES
+Problems with the physics/data itself that cannot be fixed by editing the plot script.
+These indicate bugs in the upstream analysis — wrong functional form, suspicious values,
+failed fits, miscalibrations, missing corrections, etc.
+If none, say "None."
+
+### PLOT ISSUES  
+Problems with how the physics is presented that CAN be fixed in the plot script.
+Missing error bars, wrong axis labels, missing pull panel, fit results not shown, etc.
+If none, say "None."
+
+### Verdict
+ACCEPT / MINOR REVISION / MAJOR REVISION / REJECT
 If ACCEPT, say exactly: ACCEPT

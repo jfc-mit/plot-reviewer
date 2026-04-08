@@ -12,9 +12,23 @@ Don't just find bugs — suggest how to make this plot BETTER. For example:
 - Is the color scheme clear and professional?
 - Would you be proud to put this in a paper?
 
-If the plot is already publication-quality and you have no suggestions,
-say exactly: ACCEPT
+## Step 1: Evaluate freely
+Write your full evaluation and suggestions. Rank by impact.
 
-Otherwise give present your issues, together with suggested/desired fixes. 
-Eg. "Move legend to top right, and split into 2 columns" or "Use line break 
+## Step 2: Filter against spec
+Now read the plotting standards from: {maxims_path}
+
+Review your suggestions above. REMOVE any that contradict the standards.
+Do not mention the removed suggestions at all in your final output.
+
+## Step 3: Final verdict
+Present ONLY the surviving suggestions.
+
+- ACCEPT — if no substantive suggestions remain after filtering.
+- SUGGESTIONS — if improvements remain. List them concisely, ranked by impact.
+  Only flag things that would materially improve the plot. Don't nitpick cosmetics
+  that are already within normal journal standards.
+
+Present issues together with suggested/desired fixes.
+Eg. "Move legend to top right, and split into 2 columns" or "Use line break
 for long label item in legend for better visual alignment"
